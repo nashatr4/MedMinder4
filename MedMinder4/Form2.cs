@@ -16,5 +16,12 @@ namespace MedMinder4
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 g = new Form3();
+            g.Show();
+            this.Hide();
+        }
     }
 }

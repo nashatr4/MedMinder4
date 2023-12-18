@@ -67,7 +67,9 @@ namespace MedMinder4
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form2 g = new Form2();
+            g.Show();
+            this.Hide();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
