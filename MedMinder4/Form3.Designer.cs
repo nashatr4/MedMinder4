@@ -29,13 +29,11 @@ namespace MedMinder4
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxMedName = new System.Windows.Forms.TextBox();
             this.numericUpDownAmountofMedicine = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownConsumptionTime = new System.Windows.Forms.NumericUpDown();
             this.dateTimePickerInitialTime = new System.Windows.Forms.DateTimePicker();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAmountofMedicine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConsumptionTime)).BeginInit();
             this.SuspendLayout();
@@ -80,10 +78,6 @@ namespace MedMinder4
             this.dateTimePickerInitialTime.TabIndex = 4;
             this.dateTimePickerInitialTime.Value = new System.DateTime(2023, 12, 18, 17, 27, 0, 0);
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -96,6 +90,7 @@ namespace MedMinder4
             this.Controls.Add(this.button1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAmountofMedicine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConsumptionTime)).EndInit();
             this.ResumeLayout(false);
@@ -110,6 +105,5 @@ namespace MedMinder4
         private System.Windows.Forms.NumericUpDown numericUpDownAmountofMedicine;
         private System.Windows.Forms.NumericUpDown numericUpDownConsumptionTime;
         private System.Windows.Forms.DateTimePicker dateTimePickerInitialTime;
-        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -78,11 +78,18 @@ namespace MedMinder4
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
+<<<<<<< HEAD
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+=======
+>>>>>>> 8b2c1476af1f45afec01f6e5167fbac04d1c2b2c
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 g = new Form2();
-            g.Show();
+            Form2 plis = new Form2();
+            plis.Show();
             this.Hide();
         }
 
@@ -91,10 +98,6 @@ namespace MedMinder4
             ActivateButton(sender, RGBColors.color2);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
