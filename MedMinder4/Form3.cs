@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace MedMinder4
 {
@@ -41,7 +42,28 @@ namespace MedMinder4
             
         }
 
-        string query = "SELECT [INITIAL TIME] FROM MEDICINE2";
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False";
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            SqlCommand command = new SqlCommand("SELECT Initial Time FROM Medicine2", connection);
+
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                DateTime waktuSekarang = DateTime.Now;
+                string minumObat = reader["Initial Time"].ToString();
+                DateTime waktu();
+                if (DateTime.TryParse(minumObat, out waktu))
+                {
+
+                }
+
+            }
         
+
+            
+        }
     }
 }
