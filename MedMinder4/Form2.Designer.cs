@@ -29,12 +29,24 @@ namespace MedMinder4
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.medicineNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.consumptionTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.initialTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountofMedicineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.medicine2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.medMinderDataSet1 = new MedMinder4.MedMinderDataSet1();
+            this.medicine2TableAdapter = new MedMinder4.MedMinderDataSet1TableAdapters.Medicine2TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicine2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medMinderDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(690, 378);
+            this.button1.Location = new System.Drawing.Point(688, 377);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -42,14 +54,84 @@ namespace MedMinder4
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.medicineNameDataGridViewTextBoxColumn,
+            this.consumptionTimeDataGridViewTextBoxColumn,
+            this.initialTimeDataGridViewTextBoxColumn,
+            this.amountofMedicineDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.medicine2BindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(982, 578);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // medicineNameDataGridViewTextBoxColumn
+            // 
+            this.medicineNameDataGridViewTextBoxColumn.DataPropertyName = "MedicineName";
+            this.medicineNameDataGridViewTextBoxColumn.HeaderText = "MedicineName";
+            this.medicineNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.medicineNameDataGridViewTextBoxColumn.Name = "medicineNameDataGridViewTextBoxColumn";
+            this.medicineNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // consumptionTimeDataGridViewTextBoxColumn
+            // 
+            this.consumptionTimeDataGridViewTextBoxColumn.DataPropertyName = "ConsumptionTime";
+            this.consumptionTimeDataGridViewTextBoxColumn.HeaderText = "ConsumptionTime";
+            this.consumptionTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.consumptionTimeDataGridViewTextBoxColumn.Name = "consumptionTimeDataGridViewTextBoxColumn";
+            this.consumptionTimeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // initialTimeDataGridViewTextBoxColumn
+            // 
+            this.initialTimeDataGridViewTextBoxColumn.DataPropertyName = "InitialTime";
+            this.initialTimeDataGridViewTextBoxColumn.HeaderText = "InitialTime";
+            this.initialTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.initialTimeDataGridViewTextBoxColumn.Name = "initialTimeDataGridViewTextBoxColumn";
+            this.initialTimeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // amountofMedicineDataGridViewTextBoxColumn
+            // 
+            this.amountofMedicineDataGridViewTextBoxColumn.DataPropertyName = "AmountofMedicine";
+            this.amountofMedicineDataGridViewTextBoxColumn.HeaderText = "AmountofMedicine";
+            this.amountofMedicineDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.amountofMedicineDataGridViewTextBoxColumn.Name = "amountofMedicineDataGridViewTextBoxColumn";
+            this.amountofMedicineDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // medicine2BindingSource
+            // 
+            this.medicine2BindingSource.DataMember = "Medicine2";
+            this.medicine2BindingSource.DataSource = this.medMinderDataSet1;
+            // 
+            // medMinderDataSet1
+            // 
+            this.medMinderDataSet1.DataSetName = "MedMinderDataSet1";
+            this.medMinderDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // medicine2TableAdapter
+            // 
+            this.medicine2TableAdapter.ClearBeforeFill = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(982, 578);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicine2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medMinderDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -57,5 +139,13 @@ namespace MedMinder4
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private MedMinderDataSet1 medMinderDataSet1;
+        private System.Windows.Forms.BindingSource medicine2BindingSource;
+        private MedMinderDataSet1TableAdapters.Medicine2TableAdapter medicine2TableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn medicineNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn consumptionTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn initialTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amountofMedicineDataGridViewTextBoxColumn;
     }
 }

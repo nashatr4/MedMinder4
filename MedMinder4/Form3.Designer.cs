@@ -40,7 +40,7 @@ namespace MedMinder4
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(701, 401);
+            this.button1.Location = new System.Drawing.Point(542, 365);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -50,31 +50,31 @@ namespace MedMinder4
             // 
             // textBoxMedName
             // 
-            this.textBoxMedName.Location = new System.Drawing.Point(375, 99);
+            this.textBoxMedName.Location = new System.Drawing.Point(203, 82);
             this.textBoxMedName.Name = "textBoxMedName";
-            this.textBoxMedName.Size = new System.Drawing.Size(100, 22);
+            this.textBoxMedName.Size = new System.Drawing.Size(414, 22);
             this.textBoxMedName.TabIndex = 1;
             // 
             // numericUpDownAmountofMedicine
             // 
-            this.numericUpDownAmountofMedicine.Location = new System.Drawing.Point(375, 262);
+            this.numericUpDownAmountofMedicine.Location = new System.Drawing.Point(203, 246);
             this.numericUpDownAmountofMedicine.Name = "numericUpDownAmountofMedicine";
-            this.numericUpDownAmountofMedicine.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDownAmountofMedicine.Size = new System.Drawing.Size(414, 22);
             this.numericUpDownAmountofMedicine.TabIndex = 2;
             // 
             // numericUpDownConsumptionTime
             // 
-            this.numericUpDownConsumptionTime.Location = new System.Drawing.Point(375, 152);
+            this.numericUpDownConsumptionTime.Location = new System.Drawing.Point(203, 137);
             this.numericUpDownConsumptionTime.Name = "numericUpDownConsumptionTime";
-            this.numericUpDownConsumptionTime.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDownConsumptionTime.Size = new System.Drawing.Size(414, 22);
             this.numericUpDownConsumptionTime.TabIndex = 3;
             // 
             // dateTimePickerInitialTime
             // 
             this.dateTimePickerInitialTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerInitialTime.Location = new System.Drawing.Point(375, 209);
+            this.dateTimePickerInitialTime.Location = new System.Drawing.Point(203, 189);
             this.dateTimePickerInitialTime.Name = "dateTimePickerInitialTime";
-            this.dateTimePickerInitialTime.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePickerInitialTime.Size = new System.Drawing.Size(414, 22);
             this.dateTimePickerInitialTime.TabIndex = 4;
             this.dateTimePickerInitialTime.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 
@@ -82,14 +82,15 @@ namespace MedMinder4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.ClientSize = new System.Drawing.Size(982, 578);
             this.Controls.Add(this.dateTimePickerInitialTime);
             this.Controls.Add(this.numericUpDownConsumptionTime);
             this.Controls.Add(this.numericUpDownAmountofMedicine);
             this.Controls.Add(this.textBoxMedName);
             this.Controls.Add(this.button1);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "List of Medicine";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAmountofMedicine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConsumptionTime)).EndInit();

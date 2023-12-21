@@ -22,32 +22,31 @@ namespace MedMinder4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False");
+            SqlConnection connection = new SqlConnection(@"Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False");
             SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Medicine2]
-           ([Medicine Name]
-           ,[Consumption Time]
-           ,[Initial Time]
-           ,[Amount of Medicine])
+           ([MedicineName]
+           ,[ConsumptionTime]
+           ,[InitialTime]
+           ,[AmountofMedicine])
      VALUES
-           ('"+textBoxMedName.Text+"', '"+numericUpDownConsumptionTime.Value+"', '"+dateTimePickerInitialTime.Value+"', '"+numericUpDownAmountofMedicine.Value+"')", conn);
-            conn.Open();
+           ('" + textBoxMedName.Text + "', '" + numericUpDownConsumptionTime.Value + "', '" + dateTimePickerInitialTime.Value + "', '" + numericUpDownAmountofMedicine.Value + "')", connection);
+            connection.Open();
             cmd.ExecuteNonQuery();
-            conn.Close();
+            connection.Close();
             MessageBox.Show("Medicine Added");
 
 
-            Form2 balik = new Form2();
-            balik.Show();
-            this.Hide();
-
-            
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
             
+            
+        }
+
+                
+            
 
 
         }
-    }
 }

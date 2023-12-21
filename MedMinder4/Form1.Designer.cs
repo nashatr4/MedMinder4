@@ -52,6 +52,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconFullPage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconXMark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 450);
+            this.panel1.Size = new System.Drawing.Size(220, 578);
             this.panel1.TabIndex = 0;
             // 
             // iconButton4
@@ -180,7 +181,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(654, 373);
+            this.button1.Location = new System.Drawing.Point(519, 297);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 44);
             this.button1.TabIndex = 1;
@@ -199,7 +200,7 @@
             this.panelBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBar.Location = new System.Drawing.Point(220, 0);
             this.panelBar.Name = "panelBar";
-            this.panelBar.Size = new System.Drawing.Size(580, 80);
+            this.panelBar.Size = new System.Drawing.Size(762, 80);
             this.panelBar.TabIndex = 2;
             this.panelBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseDown);
             // 
@@ -212,7 +213,7 @@
             this.iconMinimize.IconColor = System.Drawing.Color.PeachPuff;
             this.iconMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMinimize.IconSize = 21;
-            this.iconMinimize.Location = new System.Drawing.Point(493, 4);
+            this.iconMinimize.Location = new System.Drawing.Point(675, 4);
             this.iconMinimize.Name = "iconMinimize";
             this.iconMinimize.Size = new System.Drawing.Size(24, 21);
             this.iconMinimize.TabIndex = 4;
@@ -228,7 +229,7 @@
             this.iconFullPage.IconColor = System.Drawing.Color.PeachPuff;
             this.iconFullPage.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconFullPage.IconSize = 21;
-            this.iconFullPage.Location = new System.Drawing.Point(523, 4);
+            this.iconFullPage.Location = new System.Drawing.Point(705, 4);
             this.iconFullPage.Name = "iconFullPage";
             this.iconFullPage.Size = new System.Drawing.Size(24, 21);
             this.iconFullPage.TabIndex = 3;
@@ -244,7 +245,7 @@
             this.iconXMark.IconColor = System.Drawing.Color.PeachPuff;
             this.iconXMark.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconXMark.IconSize = 21;
-            this.iconXMark.Location = new System.Drawing.Point(553, 4);
+            this.iconXMark.Location = new System.Drawing.Point(735, 4);
             this.iconXMark.Name = "iconXMark";
             this.iconXMark.Size = new System.Drawing.Size(24, 21);
             this.iconXMark.TabIndex = 2;
@@ -280,27 +281,27 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 80);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(580, 7);
+            this.panelShadow.Size = new System.Drawing.Size(762, 7);
             this.panelShadow.TabIndex = 3;
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelDesktop.Controls.Add(this.button1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 87);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(580, 363);
+            this.panelDesktop.Size = new System.Drawing.Size(762, 491);
             this.panelDesktop.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(982, 578);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelBar);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -313,6 +314,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconFullPage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconXMark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
