@@ -37,12 +37,20 @@
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panelBar = new System.Windows.Forms.Panel();
+            this.iconMinimize = new FontAwesome.Sharp.IconPictureBox();
+            this.iconFullPage = new FontAwesome.Sharp.IconPictureBox();
+            this.iconXMark = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFullPage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconXMark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,6 +191,9 @@
             // panelBar
             // 
             this.panelBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.panelBar.Controls.Add(this.iconMinimize);
+            this.panelBar.Controls.Add(this.iconFullPage);
+            this.panelBar.Controls.Add(this.iconXMark);
             this.panelBar.Controls.Add(this.label1);
             this.panelBar.Controls.Add(this.iconPictureBox1);
             this.panelBar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -191,6 +202,54 @@
             this.panelBar.Size = new System.Drawing.Size(580, 80);
             this.panelBar.TabIndex = 2;
             this.panelBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseDown);
+            // 
+            // iconMinimize
+            // 
+            this.iconMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.iconMinimize.ForeColor = System.Drawing.Color.PeachPuff;
+            this.iconMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.iconMinimize.IconColor = System.Drawing.Color.PeachPuff;
+            this.iconMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMinimize.IconSize = 21;
+            this.iconMinimize.Location = new System.Drawing.Point(493, 4);
+            this.iconMinimize.Name = "iconMinimize";
+            this.iconMinimize.Size = new System.Drawing.Size(24, 21);
+            this.iconMinimize.TabIndex = 4;
+            this.iconMinimize.TabStop = false;
+            this.iconMinimize.Click += new System.EventHandler(this.iconMinimize_Click);
+            // 
+            // iconFullPage
+            // 
+            this.iconFullPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconFullPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.iconFullPage.ForeColor = System.Drawing.Color.PeachPuff;
+            this.iconFullPage.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.iconFullPage.IconColor = System.Drawing.Color.PeachPuff;
+            this.iconFullPage.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconFullPage.IconSize = 21;
+            this.iconFullPage.Location = new System.Drawing.Point(523, 4);
+            this.iconFullPage.Name = "iconFullPage";
+            this.iconFullPage.Size = new System.Drawing.Size(24, 21);
+            this.iconFullPage.TabIndex = 3;
+            this.iconFullPage.TabStop = false;
+            this.iconFullPage.Click += new System.EventHandler(this.iconFullPage_Click);
+            // 
+            // iconXMark
+            // 
+            this.iconXMark.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconXMark.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.iconXMark.ForeColor = System.Drawing.Color.PeachPuff;
+            this.iconXMark.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.iconXMark.IconColor = System.Drawing.Color.PeachPuff;
+            this.iconXMark.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconXMark.IconSize = 21;
+            this.iconXMark.Location = new System.Drawing.Point(553, 4);
+            this.iconXMark.Name = "iconXMark";
+            this.iconXMark.Size = new System.Drawing.Size(24, 21);
+            this.iconXMark.TabIndex = 2;
+            this.iconXMark.TabStop = false;
+            this.iconXMark.Click += new System.EventHandler(this.iconXMark_Click);
             // 
             // label1
             // 
@@ -215,11 +274,31 @@
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(50)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(220, 80);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(580, 7);
+            this.panelShadow.TabIndex = 3;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 87);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(580, 363);
+            this.panelDesktop.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelBar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
@@ -230,6 +309,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelBar.ResumeLayout(false);
             this.panelBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFullPage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconXMark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -248,6 +330,11 @@
         private System.Windows.Forms.Panel panelBar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelShadow;
+        private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconPictureBox iconXMark;
+        private FontAwesome.Sharp.IconPictureBox iconMinimize;
+        private FontAwesome.Sharp.IconPictureBox iconFullPage;
     }
 }
 
