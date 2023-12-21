@@ -78,13 +78,7 @@ namespace MedMinder4
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
-<<<<<<< HEAD
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
-=======
->>>>>>> 8b2c1476af1f45afec01f6e5167fbac04d1c2b2c
 
         private void button1_Click(object sender, EventArgs e)
         {

@@ -76,7 +76,7 @@ namespace MedMinder4
             this.dateTimePickerInitialTime.Name = "dateTimePickerInitialTime";
             this.dateTimePickerInitialTime.Size = new System.Drawing.Size(200, 22);
             this.dateTimePickerInitialTime.TabIndex = 4;
-            this.dateTimePickerInitialTime.Value = new System.DateTime(2023, 12, 18, 17, 27, 0, 0);
+            this.dateTimePickerInitialTime.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 
             // Form3
             // 

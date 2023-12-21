@@ -20,10 +20,6 @@ namespace MedMinder4
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-
-            SqlConnection connection = new SqlConnection("Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False");
-            SqlDataReader baca = new SqlDataReader(connection);
-
         }
 
         
