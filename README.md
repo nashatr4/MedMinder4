@@ -17,6 +17,12 @@ Medication Reminder App || Final Project for Object Oriented Programming Course,
 **Client:** C#
 
 **Server:** SQL Server
+## How to use
+1. clone
+2. download database
+3. ubah file form2.cs, form3.cs, form4.cs, dan form5.cs sesuai alamat database
+4. jalankan aplikasi
+5. mulai gunakan aplikasi untuk menyimpan jadwal minum obat
 
 ## Screenshots
 ![App Screenshot]()
