@@ -12,7 +12,7 @@ namespace MedMinder4
         public SqlConnection GetConn()
         {
             SqlConnection Conn = new SqlConnection();
-            Conn.ConnectionString = "Data Source=LAPTOP-T4R0VNG1; initial catalog=LOGIN; integrated security=true";
+            Conn.ConnectionString = "Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False";
             return Conn;
         }
     }

@@ -54,31 +54,31 @@ namespace MedMinder4
             // 
             // textBoxMedName
             // 
-            this.textBoxMedName.Location = new System.Drawing.Point(253, 69);
+            this.textBoxMedName.Location = new System.Drawing.Point(356, 72);
             this.textBoxMedName.Name = "textBoxMedName";
-            this.textBoxMedName.Size = new System.Drawing.Size(414, 22);
+            this.textBoxMedName.Size = new System.Drawing.Size(294, 22);
             this.textBoxMedName.TabIndex = 1;
             // 
             // numericUpDownAmountofMedicine
             // 
-            this.numericUpDownAmountofMedicine.Location = new System.Drawing.Point(253, 233);
+            this.numericUpDownAmountofMedicine.Location = new System.Drawing.Point(356, 236);
             this.numericUpDownAmountofMedicine.Name = "numericUpDownAmountofMedicine";
-            this.numericUpDownAmountofMedicine.Size = new System.Drawing.Size(414, 22);
+            this.numericUpDownAmountofMedicine.Size = new System.Drawing.Size(294, 22);
             this.numericUpDownAmountofMedicine.TabIndex = 2;
             // 
             // numericUpDownConsumptionTime
             // 
-            this.numericUpDownConsumptionTime.Location = new System.Drawing.Point(253, 122);
+            this.numericUpDownConsumptionTime.Location = new System.Drawing.Point(356, 125);
             this.numericUpDownConsumptionTime.Name = "numericUpDownConsumptionTime";
-            this.numericUpDownConsumptionTime.Size = new System.Drawing.Size(414, 22);
+            this.numericUpDownConsumptionTime.Size = new System.Drawing.Size(294, 22);
             this.numericUpDownConsumptionTime.TabIndex = 3;
             // 
             // dateTimePickerInitialTime
             // 
             this.dateTimePickerInitialTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerInitialTime.Location = new System.Drawing.Point(253, 174);
+            this.dateTimePickerInitialTime.Location = new System.Drawing.Point(356, 177);
             this.dateTimePickerInitialTime.Name = "dateTimePickerInitialTime";
-            this.dateTimePickerInitialTime.Size = new System.Drawing.Size(414, 22);
+            this.dateTimePickerInitialTime.Size = new System.Drawing.Size(294, 22);
             this.dateTimePickerInitialTime.TabIndex = 4;
             this.dateTimePickerInitialTime.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 

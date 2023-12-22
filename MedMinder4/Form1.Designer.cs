@@ -37,7 +37,6 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelBar = new System.Windows.Forms.Panel();
             this.iconMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.iconFullPage = new FontAwesome.Sharp.IconPictureBox();
@@ -207,17 +206,6 @@
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(664, 424);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "next";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panelBar
             // 
             this.panelBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
@@ -317,7 +305,6 @@
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panelDesktop.Controls.Add(this.textBoxDescription);
             this.panelDesktop.Controls.Add(this.textBoxNama);
-            this.panelDesktop.Controls.Add(this.button1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 87);
             this.panelDesktop.Name = "panelDesktop";
@@ -337,10 +324,8 @@
             this.textBoxDescription.Size = new System.Drawing.Size(636, 154);
             this.textBoxDescription.TabIndex = 6;
             this.textBoxDescription.Text = "Aplikasi ini dirancang untuk membantu mengingat dan mengelola jadwal minum obat k" +
-    "amu dengan lebih baik. Jangan sampai terlambat dalam mengonsumsi obat kamu sesua" +
-    "i jadwal yaa!";
+    "amu dengan lebih baik. Jangan sampai terlambat dalam mengonsumsi obat kamu yaa!";
             this.textBoxDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxDescription.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBoxNama
             // 
@@ -399,7 +384,6 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox btnHome;
         private System.Windows.Forms.Panel panelBar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;

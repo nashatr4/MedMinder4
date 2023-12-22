@@ -32,35 +32,7 @@ namespace MedMinder4
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string constring = "Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False";
-            string query = "DELETE FROM Medicine4 WHERE MedicineName = '";
-            SqlConnection conn = new SqlConnection(constring);
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataReader reader;
-            try
-            {
-                conn.Open();
-                reader = cmd.ExecuteReader();
-                MessageBox.Show("Deleted Medicine");
-                while (reader.Read())
-                {
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
         }

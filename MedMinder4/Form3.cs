@@ -35,7 +35,6 @@ namespace MedMinder4
             connection.Close();
             MessageBox.Show("Medicine Added");
 
-
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -44,9 +43,6 @@ namespace MedMinder4
             
         }
 
-                
-            
 
-
-        }
+    }
 }

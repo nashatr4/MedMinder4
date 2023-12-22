@@ -61,5 +61,10 @@ namespace MedMinder4
         {
             Application.Exit();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
