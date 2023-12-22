@@ -32,22 +32,22 @@ namespace MedMinder4
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.medicine2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medMinderDataSet1 = new MedMinder4.MedMinderDataSet1();
-            this.medicine2TableAdapter = new MedMinder4.MedMinderDataSet1TableAdapters.Medicine2TableAdapter();
-            this.medMinderDataSet2 = new MedMinder4.MedMinderDataSet2();
-            this.medicine4BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medicine4TableAdapter = new MedMinder4.MedMinderDataSet2TableAdapters.Medicine4TableAdapter();
             this.medicineNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consumptionTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.initialTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amountofMedicineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.medicine4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.medMinderDataSet2 = new MedMinder4.MedMinderDataSet2();
+            this.medicine4TableAdapter = new MedMinder4.MedMinderDataSet2TableAdapters.Medicine4TableAdapter();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.medicine2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.medMinderDataSet1 = new MedMinder4.MedMinderDataSet1();
+            this.medicine2TableAdapter = new MedMinder4.MedMinderDataSet1TableAdapters.Medicine2TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicine4BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medMinderDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicine2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medMinderDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medMinderDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicine4BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -78,34 +78,6 @@ namespace MedMinder4
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(982, 578);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // medicine2BindingSource
-            // 
-            this.medicine2BindingSource.DataSource = this.medMinderDataSet1;
-            this.medicine2BindingSource.Position = 0;
-            // 
-            // medMinderDataSet1
-            // 
-            this.medMinderDataSet1.DataSetName = "MedMinderDataSet1";
-            this.medMinderDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // medicine2TableAdapter
-            // 
-            this.medicine2TableAdapter.ClearBeforeFill = true;
-            // 
-            // medMinderDataSet2
-            // 
-            this.medMinderDataSet2.DataSetName = "MedMinderDataSet2";
-            this.medMinderDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // medicine4BindingSource
-            // 
-            this.medicine4BindingSource.DataMember = "Medicine4";
-            this.medicine4BindingSource.DataSource = this.medMinderDataSet2;
-            // 
-            // medicine4TableAdapter
-            // 
-            this.medicine4TableAdapter.ClearBeforeFill = true;
             // 
             // medicineNameDataGridViewTextBoxColumn
             // 
@@ -139,6 +111,20 @@ namespace MedMinder4
             this.amountofMedicineDataGridViewTextBoxColumn.Name = "amountofMedicineDataGridViewTextBoxColumn";
             this.amountofMedicineDataGridViewTextBoxColumn.Width = 125;
             // 
+            // medicine4BindingSource
+            // 
+            this.medicine4BindingSource.DataMember = "Medicine4";
+            this.medicine4BindingSource.DataSource = this.medMinderDataSet2;
+            // 
+            // medMinderDataSet2
+            // 
+            this.medMinderDataSet2.DataSetName = "MedMinderDataSet2";
+            this.medMinderDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // medicine4TableAdapter
+            // 
+            this.medicine4TableAdapter.ClearBeforeFill = true;
+            // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
@@ -149,6 +135,20 @@ namespace MedMinder4
             this.listBox1.TabIndex = 2;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
+            // medicine2BindingSource
+            // 
+            this.medicine2BindingSource.DataSource = this.medMinderDataSet1;
+            this.medicine2BindingSource.Position = 0;
+            // 
+            // medMinderDataSet1
+            // 
+            this.medMinderDataSet1.DataSetName = "MedMinderDataSet1";
+            this.medMinderDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // medicine2TableAdapter
+            // 
+            this.medicine2TableAdapter.ClearBeforeFill = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -158,13 +158,13 @@ namespace MedMinder4
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "List of medicine";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicine4BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medMinderDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicine2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medMinderDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medMinderDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicine4BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -71,7 +71,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxMedName1);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Remove Medicine";
             this.ResumeLayout(false);
             this.PerformLayout();
 

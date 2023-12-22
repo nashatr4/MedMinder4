@@ -42,6 +42,7 @@ namespace MedMinder4
             public static System.Drawing.Color color2 = System.Drawing.Color.FromArgb(248, 118, 176);
             public static System.Drawing.Color color3 = System.Drawing.Color.FromArgb(253, 138, 114);
             public static System.Drawing.Color color4 = System.Drawing.Color.FromArgb(24, 242, 251);
+            public static System.Drawing.Color color5 = System.Drawing.Color.FromArgb(255, 215, 0);
         }
 
         private void ActivateButton(object senderBtn, System.Drawing.Color color)
@@ -97,6 +98,7 @@ namespace MedMinder4
             childForm.BringToFront();
             childForm.Show();
             label1.Text = childForm.Text;
+            label1.ForeColor = System.Drawing.Color.AliceBlue;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -115,7 +117,7 @@ namespace MedMinder4
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Form1());
+            OpenChildForm(new Form5());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -133,7 +135,12 @@ namespace MedMinder4
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new Form2());
+            OpenChildForm(new Form4());
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -179,5 +186,6 @@ namespace MedMinder4
         {
             WindowState = FormWindowState.Minimized;
         }
+
     }
 }
