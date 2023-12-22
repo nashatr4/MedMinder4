@@ -22,8 +22,8 @@ namespace MedMinder4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(@"Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False");
-            SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Medicine2]
+            SqlConnection connection = new SqlConnection("Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False");
+            SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Medicine4]
            ([MedicineName]
            ,[ConsumptionTime]
            ,[InitialTime]

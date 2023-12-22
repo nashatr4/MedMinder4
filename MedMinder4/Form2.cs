@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MedMinder4
 {
@@ -26,9 +27,37 @@ namespace MedMinder4
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'medMinderDataSet1.Medicine2' table. You can move, or remove it, as needed.
-            this.medicine2TableAdapter.Fill(this.medMinderDataSet1.Medicine2);
+            // TODO: This line of code loads data into the 'medMinderDataSet2.Medicine4' table. You can move, or remove it, as needed.
+            this.medicine4TableAdapter.Fill(this.medMinderDataSet2.Medicine4);
 
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string constring = "Data Source=LAPTOP-HJSTJR2S\\SQLEXPRESS;Initial Catalog=MedMinder;Integrated Security=True;Encrypt=False";
+            string query = "DELETE FROM Medicine4 WHERE MedicineName = '";
+            SqlConnection conn = new SqlConnection(constring);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader;
+            try
+            {
+                conn.Open();
+                reader = cmd.ExecuteReader();
+                MessageBox.Show("Deleted Medicine");
+                while (reader.Read())
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
