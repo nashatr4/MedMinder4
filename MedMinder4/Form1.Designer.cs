@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
@@ -45,6 +46,9 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
+            this.textBoxNama = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -205,7 +209,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(519, 297);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(664, 424);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 44);
             this.button1.TabIndex = 1;
@@ -237,7 +242,7 @@
             this.iconMinimize.IconColor = System.Drawing.Color.PeachPuff;
             this.iconMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMinimize.IconSize = 21;
-            this.iconMinimize.Location = new System.Drawing.Point(675, 4);
+            this.iconMinimize.Location = new System.Drawing.Point(675, 3);
             this.iconMinimize.Name = "iconMinimize";
             this.iconMinimize.Size = new System.Drawing.Size(24, 21);
             this.iconMinimize.TabIndex = 4;
@@ -253,7 +258,7 @@
             this.iconFullPage.IconColor = System.Drawing.Color.PeachPuff;
             this.iconFullPage.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconFullPage.IconSize = 21;
-            this.iconFullPage.Location = new System.Drawing.Point(705, 4);
+            this.iconFullPage.Location = new System.Drawing.Point(705, 3);
             this.iconFullPage.Name = "iconFullPage";
             this.iconFullPage.Size = new System.Drawing.Size(24, 21);
             this.iconFullPage.TabIndex = 3;
@@ -269,7 +274,7 @@
             this.iconXMark.IconColor = System.Drawing.Color.PeachPuff;
             this.iconXMark.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconXMark.IconSize = 21;
-            this.iconXMark.Location = new System.Drawing.Point(735, 4);
+            this.iconXMark.Location = new System.Drawing.Point(735, 3);
             this.iconXMark.Name = "iconXMark";
             this.iconXMark.Size = new System.Drawing.Size(24, 21);
             this.iconXMark.TabIndex = 2;
@@ -310,12 +315,53 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelDesktop.Controls.Add(this.textBoxDescription);
+            this.panelDesktop.Controls.Add(this.textBoxNama);
             this.panelDesktop.Controls.Add(this.button1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 87);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(762, 491);
             this.panelDesktop.TabIndex = 4;
+            // 
+            // textBoxDescription
+            // 
+            this.textBoxDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDescription.ForeColor = System.Drawing.Color.PeachPuff;
+            this.textBoxDescription.Location = new System.Drawing.Point(63, 199);
+            this.textBoxDescription.Multiline = true;
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.Size = new System.Drawing.Size(636, 154);
+            this.textBoxDescription.TabIndex = 6;
+            this.textBoxDescription.Text = "Aplikasi ini dirancang untuk membantu mengingat dan mengelola jadwal minum obat k" +
+    "amu dengan lebih baik. Jangan sampai terlambat dalam mengonsumsi obat kamu sesua" +
+    "i jadwal yaa!";
+            this.textBoxDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDescription.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBoxNama
+            // 
+            this.textBoxNama.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxNama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.textBoxNama.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNama.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxNama.Location = new System.Drawing.Point(63, 92);
+            this.textBoxNama.Multiline = true;
+            this.textBoxNama.Name = "textBoxNama";
+            this.textBoxNama.Size = new System.Drawing.Size(636, 81);
+            this.textBoxNama.TabIndex = 5;
+            this.textBoxNama.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNama.TextChanged += new System.EventHandler(this.textBoxNama_TextChanged);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -329,7 +375,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -341,6 +386,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconXMark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -364,6 +410,9 @@
         private FontAwesome.Sharp.IconPictureBox iconMinimize;
         private FontAwesome.Sharp.IconPictureBox iconFullPage;
         private FontAwesome.Sharp.IconButton iconButton5;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        internal System.Windows.Forms.TextBox textBoxNama;
+        private System.Windows.Forms.TextBox textBoxDescription;
     }
 }
 

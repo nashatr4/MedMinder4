@@ -119,6 +119,7 @@ namespace MedMinder4
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Form6());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -142,6 +143,8 @@ namespace MedMinder4
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            currentChildForm.Close();
+            Reset();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -189,6 +192,16 @@ namespace MedMinder4
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNama_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -45,9 +45,11 @@ namespace MedMinder4
             if(rd.HasRows)
             {
                 this.Hide();
-                conn.Close();
                 Form1 formUtama = new Form1();
+                formUtama.textBoxNama.Text = "Hello " +  rd["NamaUser"].ToString() + "! ";
                 formUtama.Show();
+
+                conn.Close();
             }
             else
             {
