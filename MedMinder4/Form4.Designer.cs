@@ -53,9 +53,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(260, 260);
+            this.button1.Location = new System.Drawing.Point(545, 153);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 42);
             this.button1.TabIndex = 2;
             this.button1.Text = "Remove";
             this.button1.UseVisualStyleBackColor = true;
