@@ -281,7 +281,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(60, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(10, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = " ";
             // 
@@ -327,7 +327,10 @@
             this.Controls.Add(this.panelBar);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();

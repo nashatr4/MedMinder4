@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Media;
 using FontAwesome.Sharp;
@@ -17,6 +18,7 @@ namespace MedMinder4
 {
     public partial class Form1 : Form
     {
+
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -27,7 +29,7 @@ namespace MedMinder4
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10, 60);
+            leftBorderBtn.Size = new System.Drawing.Size(10, 60);
             panel1.Controls.Add(leftBorderBtn);
             //Form
             this.Text = string.Empty;
@@ -60,7 +62,7 @@ namespace MedMinder4
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
                 //Left border button
                 leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+                leftBorderBtn.Location = new System.Drawing.Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
                 //Icont Current Form
@@ -117,7 +119,6 @@ namespace MedMinder4
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Form5());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -171,7 +172,7 @@ namespace MedMinder4
 
         private void iconXMark_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void iconFullPage_Click(object sender, EventArgs e)
@@ -187,5 +188,9 @@ namespace MedMinder4
             WindowState = FormWindowState.Minimized;
         }
 
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
